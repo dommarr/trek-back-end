@@ -50,7 +50,7 @@ class ActivitiesController < ProtectedController
   end
 
   def activity_params
-    params.require(:activity).permit(:begin_date, :end_date, :activity)
+    params.require(:activity).permit(:begin_date, :end_date, :activity_title, :trip_id, :user_id)
   end
 
   private :set_activity, :activity_params
